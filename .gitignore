@@ -1,0 +1,7 @@
+node_modules/
+gpx-backend/node_modules/
+
+.env
+gpx-backend/.env
+
+.vscode/

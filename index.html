@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+
+        <h3>Upload the file</h3>
+        <label for="fileinput"></label>
+        <input type="file" id="fileinput" multiple>
+
+        <div id="taglist"></div>
+
+        <!-- <input type="checkbox"> -->
+        <label for="taglist"></label>
+        <button id="showselected"> Show Selected Tags </button>
+        <button id="selectall">Select All</button>
+        <button id="clearall">Clear All</button>
+
+        <select id="filefilter">
+            <option value="all">All Files</option>
+        </select>
+
+        <!-- <button id="deleteselected">
+        deleteselected
+    </button> -->
+
+        <!-- <button id="combineTables">Combine Tables</button> -->
+        <button id="selectalltables">Select all Tables</button>
+
+        <button id="clearalltables">Clear All Tables</button>
+        <button id="removeTable">Remove selected Tables</button>
+
+        <!-- <button id="renamebutton">Rename File</button> -->
+
+        <div></div>
+
+        <input type="text" id="searchName">
+
+        <h3>Upload Files to dataBase</h3>
+        <button id="uploadtoDB"> upload selected file to DB</button>
+        <label> Groups:</label>
+        <select name="" id="fileGroup"> </select>
+
+        <label> Date:</label>
+        <input type="date" id="filedate">
+
+
+
+        <div id="editmodel" style="display: none;">
+            <h3>Edit Waypoints</h3>
+            <div id="editfields"></div>
+            <button id="saveEdits">Save</button>
+            <button id="cancelEdits">Cancel</button>
+        </div>
+        <h3>Data Currently in DB</h3>
+        <button id="showdbcolm">show DB Columns</button>
+        <div id="dbtaglist"></div>
+
+        <button id="showdbdata">Show Selected Columns</button>
+        <button id="showalldb">Show All DB Data</button>
+
+        <h3>Files in DB</h3>
+        <input type="text" id="searchdbfile" placeholder="search file">
+        <button id="loaddbfiles">Show DB Files</button>
+        <div id="dbfilelist"></div>
+
+
+
+        <h3>Search Files using Group and Date</h3>
+        <label for="">Groups:</label>
+        <select name="" id="searchGroup"> </select>
+
+
+        <input type="date" id="searchDate">
+        <button id="searchFiles">Search</button>
+        <div id="searchResult"></div>
+
+        <h3>Delete files from DB</h3>
+        <input type="text" id="searchdeletefile" placeholder="Search File">
+        <button id="loaddeletefile">show DB files</button>
+        <button id="selectallfiles"> Select All Files</button>
+        <div id="deletefilelist"></div>
+        <button id="deletefiles">Delete Selected</button>
+
+
+        <h3>Delete Files by Group and Date</h3>
+
+        <label>Group:</label>
+        <select id="deleteGroup"></select>
+
+        <label>Date:</label>
+        <input type="date" id="deleteDate">
+
+        <button id="loadDeleteByGroup">Search Files</button>
+
+        <button id="selectAllDeleteGroup">
+            Select All
+        </button>
+
+        <div id="deleteGroupList"></div>
+
+        <button id="deleteSelectedGroupFiles">Delete Selected</button>
+        
+    </div>
+    <div class="content">
+        <div id="output"></div>
+
+    </div>
+
+</div>
+
+
+
+    <table></table>
+
+    <script src="index.js"></script>
+</body>
+</html>
